@@ -25,11 +25,12 @@
         </encoder>
     </appender>
 
+    <!-- 低版本存在读取配置类型出错报null的问题，普遍存在 -->
+    <logger name="io.seata.config.FileConfiguration" level="INFO" addtivity="false"></logger>
+
     <root level="INFO">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
     </root>
-
-    <logger name="io.seata" level="ERROR"></logger>
 
 </configuration>

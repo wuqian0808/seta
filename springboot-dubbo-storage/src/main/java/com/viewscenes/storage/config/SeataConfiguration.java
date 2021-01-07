@@ -26,10 +26,10 @@ public class SeataConfiguration {
     @Autowired
     private DataSourceProperties dataSourceProperties;
 
-    @Bean
-    public GlobalTransactionScanner globalTransactionScanner() {
-        return new GlobalTransactionScanner("springboot-storage", "my_test_tx_group");
-    }
+//    @Bean
+//    public GlobalTransactionScanner globalTransactionScanner() {
+//        return new GlobalTransactionScanner("springboot-storage", "my_test_tx_group");
+//    }
 
     @Bean
     @Primary
